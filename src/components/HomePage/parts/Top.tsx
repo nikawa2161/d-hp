@@ -3,7 +3,7 @@ import type { ID_LABEL_TYPE } from "../const";
 export default function Top({ id }: { id: ID_LABEL_TYPE }) {
   return (
     <>
-      <section id={id} className="relative bg-gradient-to-r from-[#f08200] to-[#856f4e] text-white py-20 px-6 min-h-screen flex items-center">
+      <section id={id} className="relative bg-gradient-to-r from-[#393938] to-[#413a30] text-white py-20 px-6 min-h-screen flex items-center">
         <img
           src="/human.webp"
           alt="背景画像"
