@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Top, CompanyInfo, Recruitment, Contact, About } from "./parts";
-import { ID_LABEL } from "./const";
+import { COMPANY_NAME, ID_LABEL } from "./const";
 import Services from "./parts/Services";
 
 export default function HomePage() {
@@ -51,7 +51,7 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-white">
       <header className="bg-[#24201e] bg-opacity-80 text-white p-4 sticky top-0 z-50 backdrop-blur-sm">
         <nav className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">〇〇株式会社</h1>
+          <h1 className="text-xl font-bold">{COMPANY_NAME}</h1>
           <div className="space-x-4">
             <a href={`#${ID_LABEL.ABOUT}`} className="hover:text-gray-300">
               ABOUT
@@ -82,7 +82,7 @@ export default function HomePage() {
 
       <footer className="bg-[#24201e] text-white py-8">
         <div className="container mx-auto text-center">
-          <p>&copy; 2024 〇〇株式会社. All Rights Reserved.</p>
+          <p>&copy; 2024 {COMPANY_NAME}. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
